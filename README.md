@@ -1,6 +1,6 @@
 <h2>search-tv</h2>
 <div>
-  This application provides a safer way to search for TV torrents. There are no ads, no malicious code, and all requests are made to a <a href="https://glitch.me" target="_blank">glitch.me</a> server which does all the dirty work and returns a clean JSON object. The results returned are magnet links. You can click the link and it will open your torrent client or you can copy the link and add it to your client manually. A clone of this project is maintained at https://search-tv.glitch.me.
+  This application provides a safer way to search for TV torrents. There are no ads, no malicious code, and all requests are made to a <a href="https://glitch.com" target="_blank">glitch.com</a> server which does all the dirty work and returns a clean JSON object. The results returned are magnet links. You can click the link and it will open your torrent client or you can copy the link and add it to your client manually. A clone of this project is maintained at https://search-tv.glitch.me.
 </div>
 <br>
 <div>
