@@ -12,7 +12,9 @@
 </div>
 <div>
   <h4>Response</h4>
-  <code>[ {"title":["Private Eyes S02E01 720p HDTV x264-KILLERS [eztv] (1.11 GB) Magnet Link"],"href":"magnet:?xt=urn:btih:5f66f5fd784d6ff92d2adb36bb7fc5a7d7d62f45&dn=Private.Eyes.S02E01.720p.HDTV.x264-KILLERS%5Beztv%5D.mkv%5Beztv%5D&tr=udp%3A%2F%2Ftracker.coppersurfer.tk%3A80&tr=udp%3A%2F%2Fglotorrents.pw%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.leechers-paradise.org%3A6969&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969"}, ... ]
+  <code>
+    [ {"title":["Private Eyes S02E01 720p HDTV x264-KILLERS [eztv] (1.11 GB) Magnet Link"],"href":"magnet:?xt=urn:btih:5f66f5fd784d6ff92d2adb36bb7fc5a7d7d62f45&dn=Private.Eyes.S02E01.720p.HDTV.x264-KILLERS%5Beztv%5D.mkv%5Beztv%5D&tr=udp%3A%2F%2Ftracker.coppersurfer.tk%3A80&tr=udp%3A%2F%2Fglotorrents.pw%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.leechers-paradise.org%3A6969&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969"}, ... ]
+  </code>
 </div>
 <br>
 <div>
