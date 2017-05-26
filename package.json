@@ -1,0 +1,25 @@
+{
+  "name": "electron-quick-start",
+  "version": "1.0.0",
+  "description": "This application provides a safer way to search for TV torrents. The results returned are magnet links. You can click the link and it will open you torrent client or you can copy the link and add it to your client manually. A clone of this project is maintained on glitch at https://search-tv.glitch.me",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "repository": "https://github.com/rledford/search-tv",
+  "keywords": [
+    "Electron",
+    "quick",
+    "start",
+    "tutorial",
+    "demo"
+  ],
+  "author": "Ryan Ledford",
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "~1.6.2"
+  },
+  "dependencies": {
+    "axios": "^0.16.1"
+  }
+}

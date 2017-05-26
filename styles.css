@@ -1,0 +1,71 @@
+body {
+  background-color: #333;
+  color: #eee;
+  width: 99%;
+}
+
+a {
+  color: #eee;
+}
+
+.cpy-link {
+  display: inline-block;
+  padding: 1px;
+  border-style: outset;
+  border-radius: 5px;
+  border-width: 1px;
+  border-color: #eee;
+  background-color: #000;
+}
+
+.cpy-link:hover {
+  cursor: pointer;
+  background-color: #aaa;
+  color: #333;
+}
+
+.cpy-link:active {
+  border-style: inset;
+}
+
+.link {
+  color: #eee;
+  width: 99%;
+  display: block;
+  text-decoration: none;
+}
+
+.link:hover {
+  color: #aaa;
+  cursor: pointer;
+}
+
+.result-link {
+  color: #eee;
+  border-style: solid;
+  border-width: 1px 0px 0px 0px;
+  border-color: #eee;
+  width: 99%;
+  display: block;
+  text-decoration: none;
+}
+
+.result-link:hover {
+  color: #aaa;
+  cursor: pointer;
+}
+
+.center {
+  text-align: center;
+}
+
+.wide {
+  width: 33%;
+}
+
+.input-text {
+  border-style: solid;
+  border-color: #eee;
+  border-radius: 5px;
+  text-align: center;
+}

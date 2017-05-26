@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Search TV</title>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+  </head>
+  <body>
+    <div class="center">
+      <h2>Search TV</h2>
+      <form onsubmit="event.preventDefault(); submitSearch()">
+        <input class='input-text wide' type="text" id="search-term" />
+        <button type="submit" onclick="submitSearch()">Search</button>
+      </form>
+      <div>
+        <small>Developed by: <a target="_blank" href="https://github.com/rledford">Ryan Ledford</a></small>
+      </div>
+    </div>
+    <div style="margin-top: 10px;" id="results">
+      <div>
+        This tool provides a safer way to search for TV torrents. All results are magent links.
+        If you have a torrent client installed and you click a magnet link, you may be prompted to allow it to be added to your torrent client.
+        Alternatively, you can copy the link address and paste it manually into your client.
+      </div>
+    </div>
+  </body>
+
+  <script>
+    // You can also require other files to run in this process
+    var axios = require("axios");
+    var {clipboard} = require("electron");
+    function submitSearch(event) {
+      let results = document.getElementById("results");
+      let term = document.getElementById("search-term").value;
+      if (!term) return;
+      results.innerHTML = "Searching...";
+      axios.get("https://search-tv.glitch.me/"+encodeURIComponent(term))
+      .then(function(res) {
+        let items = res.data;
+        results.innerHTML = "";
+        items.forEach(function(item){
+          let div = document.createElement("div");
+          let a = document.createElement("a");
+          let cpy = document.createElement("a");
+          a.innerHTML = item.title;
+          a.href = item.href;
+          a.className = "result-link";
+          cpy.innerHTML = "Copy link to clipboard.";
+          cpy.href = "#";
+          cpy.className = "link";
+          cpy.onclick = function(){
+            clipboard.writeText(item.href);
+          }
+          div.appendChild(a);
+          div.appendChild(cpy);
+          results.appendChild(div);
+        });
+      })
+      .catch(function(err) {
+        results.innerHTML = err;
+      });
+
+      return true;
+    }
+    require("./renderer.js")
+  </script>
+</html>
